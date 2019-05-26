@@ -1,0 +1,184 @@
+EESchema Schematic File Version 4
+LIBS:UPS-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 5CA59EAA
+P 1150 1650
+F 0 "J?" H 1178 1676 50  0000 L CNN
+F 1 "ACcity" H 1178 1585 50  0000 L CNN
+F 2 "" H 1150 1650 50  0001 C CNN
+F 3 "~" H 1150 1650 50  0001 C CNN
+	1    1150 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Transformer_1P_1S T?
+U 1 1 5CA5A835
+P 2550 1600
+F 0 "T?" H 2550 1981 50  0000 C CNN
+F 1 "Transformer_1P_1S" H 2550 1890 50  0000 C CNN
+F 2 "" H 2550 1600 50  0001 C CNN
+F 3 "~" H 2550 1600 50  0001 C CNN
+	1    2550 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:G5V-2 K?
+U 1 1 5CA5C9E9
+P 2650 2800
+F 0 "K?" H 2020 2754 50  0000 R CNN
+F 1 "relay" H 2020 2845 50  0000 R CNN
+F 2 "Relay_THT:Relay_DPDT_Omron_G5V-2" H 3300 2750 50  0001 L CNN
+F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_2.pdf" H 2450 2800 50  0001 C CNN
+	1    2650 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_Bridge_+-AA D?
+U 1 1 5CA5EC88
+P 3600 1600
+F 0 "D?" H 3944 1646 50  0000 L CNN
+F 1 "D_Bridge_+-AA" H 3944 1555 50  0000 L CNN
+F 2 "" H 3600 1600 50  0001 C CNN
+F 3 "~" H 3600 1600 50  0001 C CNN
+	1    3600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L7805 U?
+U 1 1 5CA60C87
+P 4900 1600
+F 0 "U?" H 4900 1842 50  0000 C CNN
+F 1 "L7805" H 4900 1751 50  0000 C CNN
+F 2 "" H 4925 1450 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 4900 1550 50  0001 C CNN
+	1    4900 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1400 1550 1550
+Wire Wire Line
+	1550 1550 1350 1550
+Wire Wire Line
+	2050 1750 2050 1800
+Wire Wire Line
+	2950 1400 3250 1400
+Wire Wire Line
+	3250 1400 3250 1250
+Wire Wire Line
+	3250 1250 3600 1250
+Wire Wire Line
+	3600 1250 3600 1300
+Wire Wire Line
+	2950 1800 3250 1800
+Wire Wire Line
+	3250 1800 3250 2000
+Wire Wire Line
+	3250 2000 3600 2000
+Wire Wire Line
+	3600 2000 3600 1900
+Wire Wire Line
+	3900 1600 4250 1600
+Wire Wire Line
+	3300 1600 3300 2100
+Wire Wire Line
+	3300 2100 3900 2100
+Wire Wire Line
+	4900 2100 4900 1900
+Wire Wire Line
+	3050 2500 3900 2500
+Wire Wire Line
+	3900 2500 3900 2100
+Connection ~ 3900 2100
+Wire Wire Line
+	3900 2100 4900 2100
+Wire Wire Line
+	3050 3100 3050 3250
+Wire Wire Line
+	3050 3250 4250 3250
+Wire Wire Line
+	4250 3250 4250 1600
+Connection ~ 4250 1600
+Wire Wire Line
+	4250 1600 4600 1600
+Wire Wire Line
+	1350 1750 2000 1750
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5CADBC26
+P 2350 2100
+F 0 "J?" V 2288 1912 50  0000 R CNN
+F 1 "ACout" V 2197 1912 50  0000 R CNN
+F 2 "" H 2350 2100 50  0001 C CNN
+F 3 "~" H 2350 2100 50  0001 C CNN
+	1    2350 2100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1550 1400 1900 1400
+Wire Wire Line
+	2050 1800 2150 1800
+Wire Wire Line
+	2650 2500 2650 2400
+Wire Wire Line
+	2650 2400 2450 2400
+Wire Wire Line
+	2450 2400 2450 2300
+Wire Wire Line
+	2250 2500 2250 2400
+Wire Wire Line
+	2250 2400 2350 2400
+Wire Wire Line
+	2350 2400 2350 2300
+Wire Wire Line
+	2350 3100 2350 3300
+Wire Wire Line
+	2350 3300 2000 3300
+Wire Wire Line
+	2000 3300 2000 1750
+Connection ~ 2000 1750
+Wire Wire Line
+	2000 1750 2050 1750
+Wire Wire Line
+	2750 3100 2750 3450
+Wire Wire Line
+	2750 3450 1900 3450
+Wire Wire Line
+	1900 3450 1900 1400
+Connection ~ 1900 1400
+Wire Wire Line
+	1900 1400 2150 1400
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5CAEF97F
+P 2250 3900
+F 0 "J?" V 2096 3948 50  0000 L CNN
+F 1 "AC from inverter" V 2187 3948 50  0000 L CNN
+F 2 "" H 2250 3900 50  0001 C CNN
+F 3 "~" H 2250 3900 50  0001 C CNN
+	1    2250 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 3700 2150 3100
+Wire Wire Line
+	2250 3700 2250 3550
+Wire Wire Line
+	2250 3550 2550 3550
+Wire Wire Line
+	2550 3550 2550 3100
+$EndSCHEMATC

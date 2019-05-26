@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name otp)(type Legacy)(uri /home/abdullah/kicad/OTP/libraries/otp.lib)(options "")(descr ""))
+  (lib (name OTP-rescue)(type Legacy)(uri ${KIPRJMOD}/OTP-rescue.lib)(options "")(descr ""))
+  (lib (name OTP-v02-rescue)(type Legacy)(uri ${KIPRJMOD}/OTP-v02-rescue.lib)(options "")(descr ""))
+)

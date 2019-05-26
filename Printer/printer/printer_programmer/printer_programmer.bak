@@ -1,0 +1,143 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x06_Male Connector
+U 1 1 5C933BA9
+P 2750 3350
+F 0 "Connector" H 2550 3750 50  0000 C CNN
+F 1 "Programmer" H 3100 3750 50  0000 C CNN
+F 2 "" H 2750 3350 50  0001 C CNN
+F 3 "~" H 2750 3350 50  0001 C CNN
+	1    2750 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male Connector
+U 1 1 5C933C82
+P 6450 3550
+F 0 "Connector" H 6900 3050 50  0000 R CNN
+F 1 "ESP 2866" H 6400 3050 50  0000 R CNN
+F 2 "" H 6450 3550 50  0001 C CNN
+F 3 "~" H 6450 3550 50  0001 C CNN
+	1    6450 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5C933D6D
+P 3750 4350
+F 0 "R2" V 3650 4250 50  0000 C CNN
+F 1 "10K" V 3650 4400 50  0000 C CNN
+F 2 "" V 3680 4350 50  0001 C CNN
+F 3 "~" H 3750 4350 50  0001 C CNN
+	1    3750 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5C933DC5
+P 3850 3950
+F 0 "R1" V 3750 3850 50  0000 C CNN
+F 1 "10K" V 3750 4000 50  0000 C CNN
+F 2 "" V 3780 3950 50  0001 C CNN
+F 3 "~" H 3850 3950 50  0001 C CNN
+	1    3850 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push BUTTON
+U 1 1 5C933E0E
+P 4350 3950
+F 0 "BUTTON" H 4550 4150 50  0000 C CNN
+F 1 "RESET" H 4250 4150 50  0000 C CNN
+F 2 "" H 4350 4150 50  0001 C CNN
+F 3 "" H 4350 4150 50  0001 C CNN
+	1    4350 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push BUTTON
+U 1 1 5C933EAA
+P 4350 4350
+F 0 "BUTTON" H 4500 4550 50  0000 C CNN
+F 1 "FLASH" H 4200 4550 50  0000 C CNN
+F 2 "" H 4350 4550 50  0001 C CNN
+F 3 "" H 4350 4550 50  0001 C CNN
+	1    4350 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3250 6250 3250
+Wire Wire Line
+	2950 3350 6250 3350
+Wire Wire Line
+	3650 3650 3650 3950
+Wire Wire Line
+	4550 3950 4750 3950
+Wire Wire Line
+	4750 3950 4750 3450
+Connection ~ 4750 3450
+Wire Wire Line
+	2950 3650 3400 3650
+Wire Wire Line
+	3400 3650 3400 4350
+Wire Wire Line
+	3400 4350 3600 4350
+Connection ~ 3400 3650
+Wire Wire Line
+	3400 3650 3650 3650
+Wire Wire Line
+	6250 3750 5800 3750
+Wire Wire Line
+	5800 3750 5800 4700
+Wire Wire Line
+	5800 4700 4050 4700
+Wire Wire Line
+	4050 4700 4050 4350
+Connection ~ 4050 4350
+Wire Wire Line
+	4050 4350 4150 4350
+Wire Wire Line
+	3650 3950 3700 3950
+Wire Wire Line
+	6250 3650 4100 3650
+Wire Wire Line
+	4100 3650 4100 3950
+Connection ~ 4100 3950
+Wire Wire Line
+	4100 3950 4150 3950
+Wire Wire Line
+	3900 4350 4050 4350
+Wire Wire Line
+	4000 3950 4100 3950
+Wire Wire Line
+	4750 3450 6250 3450
+Wire Wire Line
+	4550 4350 4750 4350
+Wire Wire Line
+	4750 4350 4750 3950
+Connection ~ 4750 3950
+Wire Wire Line
+	6250 3550 3400 3550
+Wire Wire Line
+	3400 3550 3400 3650
+Wire Wire Line
+	2950 3550 3200 3550
+Wire Wire Line
+	3200 3550 3200 3450
+Wire Wire Line
+	3200 3450 4750 3450
+$EndSCHEMATC

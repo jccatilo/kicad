@@ -1,0 +1,185 @@
+EESchema Schematic File Version 4
+LIBS:UPS-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:D D?
+U 1 1 5CAF0242
+P 6800 2300
+F 0 "D?" H 6800 2516 50  0000 C CNN
+F 1 "D" H 6800 2425 50  0000 C CNN
+F 2 "" H 6800 2300 50  0001 C CNN
+F 3 "~" H 6800 2300 50  0001 C CNN
+	1    6800 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5CAF2058
+P 6800 2550
+F 0 "D?" H 6800 2766 50  0000 C CNN
+F 1 "D" H 6800 2675 50  0000 C CNN
+F 2 "" H 6800 2550 50  0001 C CNN
+F 3 "~" H 6800 2550 50  0001 C CNN
+	1    6800 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5CAF2C7E
+P 7250 2300
+F 0 "D?" H 7250 2516 50  0000 C CNN
+F 1 "D" H 7250 2425 50  0000 C CNN
+F 2 "" H 7250 2300 50  0001 C CNN
+F 3 "~" H 7250 2300 50  0001 C CNN
+	1    7250 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5CAF7E10
+P 7250 2550
+F 0 "D?" H 7250 2766 50  0000 C CNN
+F 1 "D" H 7250 2675 50  0000 C CNN
+F 2 "" H 7250 2550 50  0001 C CNN
+F 3 "~" H 7250 2550 50  0001 C CNN
+	1    7250 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5CAFBFE8
+P 8150 2550
+F 0 "J?" H 8178 2526 50  0000 L CNN
+F 1 "TO RELAY" H 8178 2435 50  0000 L CNN
+F 2 "" H 8150 2550 50  0001 C CNN
+F 3 "~" H 8150 2550 50  0001 C CNN
+	1    8150 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 2300 7600 2300
+Wire Wire Line
+	7600 2300 7600 2400
+Wire Wire Line
+	7600 2550 7400 2550
+Wire Wire Line
+	6950 2300 7000 2300
+Wire Wire Line
+	7100 2550 7050 2550
+Wire Wire Line
+	6650 2300 6500 2300
+Wire Wire Line
+	6500 2300 6500 2450
+Wire Wire Line
+	6500 2550 6650 2550
+Wire Wire Line
+	7600 2400 7700 2400
+Wire Wire Line
+	7850 2400 7850 2550
+Wire Wire Line
+	7850 2550 7950 2550
+Connection ~ 7600 2400
+Wire Wire Line
+	7600 2400 7600 2550
+Wire Wire Line
+	7950 2650 7550 2650
+Wire Wire Line
+	6450 2650 6450 2450
+Wire Wire Line
+	6450 2450 6500 2450
+Connection ~ 6500 2450
+Wire Wire Line
+	6500 2450 6500 2550
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5CB01A4F
+P 6050 2450
+F 0 "J?" H 5942 2125 50  0000 C CNN
+F 1 "FROM TRANSFORMER" H 5942 2216 50  0000 C CNN
+F 2 "" H 6050 2450 50  0001 C CNN
+F 3 "~" H 6050 2450 50  0001 C CNN
+	1    6050 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6250 2350 6350 2350
+Wire Wire Line
+	6350 2350 6350 2150
+Wire Wire Line
+	6350 2150 7000 2150
+Wire Wire Line
+	7000 2150 7000 2300
+Connection ~ 7000 2300
+Wire Wire Line
+	7000 2300 7100 2300
+Wire Wire Line
+	6250 2450 6350 2450
+Wire Wire Line
+	6350 2450 6350 2800
+Wire Wire Line
+	6350 2800 7050 2800
+Wire Wire Line
+	7050 2800 7050 2550
+Connection ~ 7050 2550
+Wire Wire Line
+	7050 2550 6950 2550
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5CB0E1A7
+P 8150 2950
+F 0 "J?" H 8178 2926 50  0000 L CNN
+F 1 "TO DC INPUT OF INVERTER" H 8178 2835 50  0000 L CNN
+F 2 "" H 8150 2950 50  0001 C CNN
+F 3 "~" H 8150 2950 50  0001 C CNN
+	1    8150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5CB0F58B
+P 8150 3350
+F 0 "J?" H 8178 3326 50  0000 L CNN
+F 1 "TO BATTERY FOR CHARGING" H 8178 3235 50  0000 L CNN
+F 2 "" H 8150 3350 50  0001 C CNN
+F 3 "~" H 8150 3350 50  0001 C CNN
+	1    8150 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 2950 7700 2950
+Wire Wire Line
+	7700 2950 7700 2400
+Connection ~ 7700 2400
+Wire Wire Line
+	7700 2400 7850 2400
+Wire Wire Line
+	7950 3050 7550 3050
+Wire Wire Line
+	7550 3050 7550 2650
+Connection ~ 7550 2650
+Wire Wire Line
+	7550 2650 6450 2650
+Wire Wire Line
+	7950 3350 7700 3350
+Wire Wire Line
+	7700 3350 7700 2950
+Connection ~ 7700 2950
+Wire Wire Line
+	7950 3450 7550 3450
+Wire Wire Line
+	7550 3450 7550 3050
+Connection ~ 7550 3050
+$EndSCHEMATC

@@ -1,0 +1,168 @@
+EESchema Schematic File Version 4
+LIBS:printer-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L light_switch:ESP-12F U1
+U 1 1 5C90179A
+P 3900 3500
+F 0 "U1" H 3650 4100 50  0000 C CNN
+F 1 "ESP-12F" H 3900 4100 50  0000 C CNN
+F 2 "light_switch:esp-12" H 4250 3700 50  0001 C CNN
+F 3 "" H 4250 3700 50  0001 C CNN
+	1    3900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5C928CBE
+P 5150 3850
+F 0 "#PWR0101" H 5150 3600 50  0001 C CNN
+F 1 "GND" H 5155 3677 50  0000 C CNN
+F 2 "" H 5150 3850 50  0001 C CNN
+F 3 "" H 5150 3850 50  0001 C CNN
+	1    5150 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 5C929B4E
+P 2750 3550
+F 0 "#PWR0102" H 2750 3400 50  0001 C CNN
+F 1 "+3V3" H 2765 3723 50  0000 C CNN
+F 2 "" H 2750 3550 50  0001 C CNN
+F 3 "" H 2750 3550 50  0001 C CNN
+	1    2750 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5C929D33
+P 4800 3650
+F 0 "R2" V 4700 3550 50  0000 C CNN
+F 1 "10K" V 4700 3700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4730 3650 50  0001 C CNN
+F 3 "~" H 4800 3650 50  0001 C CNN
+	1    4800 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male Connector1
+U 1 1 5C93092A
+P 3800 1900
+F 0 "Connector1" V 3700 2400 50  0000 R CNN
+F 1 "Printer Programmer" V 3700 1900 50  0000 R CNN
+F 2 "" H 3800 1900 50  0001 C CNN
+F 3 "~" H 3800 1900 50  0001 C CNN
+	1    3800 1900
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5C925FD7
+P 2950 2850
+F 0 "R1" V 2850 2750 50  0000 C CNN
+F 1 "10K" V 2850 2900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2880 2850 50  0001 C CNN
+F 3 "~" H 2950 2850 50  0001 C CNN
+	1    2950 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3050 3300 3050
+Wire Wire Line
+	3300 3050 3300 2200
+Wire Wire Line
+	3300 2200 3700 2200
+Wire Wire Line
+	3700 2200 3700 2100
+Wire Wire Line
+	4350 3450 4550 3450
+Wire Wire Line
+	4550 3450 4550 2750
+Wire Wire Line
+	4550 2750 3600 2750
+Wire Wire Line
+	3600 2750 3600 2100
+Wire Wire Line
+	3800 2100 3800 2300
+Wire Wire Line
+	3800 2300 3200 2300
+Wire Wire Line
+	3200 2300 3200 3750
+Wire Wire Line
+	3200 3750 3450 3750
+Wire Wire Line
+	3200 3750 2750 3750
+Wire Wire Line
+	2750 3750 2750 3550
+Connection ~ 3200 3750
+Wire Wire Line
+	3450 3250 2950 3250
+Wire Wire Line
+	2950 3250 2950 3000
+Wire Wire Line
+	4350 3550 4550 3550
+Wire Wire Line
+	4550 3550 4550 4350
+Wire Wire Line
+	4550 4350 2450 4350
+Wire Wire Line
+	2450 4350 2450 3250
+Wire Wire Line
+	2450 3250 2950 3250
+Connection ~ 2950 3250
+Wire Wire Line
+	2950 2700 2950 2300
+Wire Wire Line
+	2950 2300 3200 2300
+Connection ~ 3200 2300
+Wire Wire Line
+	4350 3750 5000 3750
+Wire Wire Line
+	5150 3750 5150 3850
+Wire Wire Line
+	4350 3650 4650 3650
+Wire Wire Line
+	4950 3650 5000 3650
+Wire Wire Line
+	5000 3650 5000 3750
+Connection ~ 5000 3750
+Wire Wire Line
+	5000 3750 5150 3750
+Wire Wire Line
+	5150 3750 5150 2600
+Wire Wire Line
+	5150 2600 3900 2600
+Wire Wire Line
+	3900 2600 3900 2100
+Connection ~ 5150 3750
+Wire Wire Line
+	4350 3150 4650 3150
+Wire Wire Line
+	4650 3150 4650 2400
+Wire Wire Line
+	4650 2400 4000 2400
+Wire Wire Line
+	4000 2400 4000 2100
+Wire Wire Line
+	4350 3050 4750 3050
+Wire Wire Line
+	4750 3050 4750 2200
+Wire Wire Line
+	4750 2200 4100 2200
+Wire Wire Line
+	4100 2200 4100 2100
+$EndSCHEMATC

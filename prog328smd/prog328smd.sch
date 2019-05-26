@@ -1,0 +1,330 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATMEGA328P-AU:ATMEGA328P-AU U1
+U 1 1 5CE4FCE5
+P 3750 3250
+F 0 "U1" H 3750 4517 50  0000 C CNN
+F 1 "ATMEGA328P-AU" H 3750 4426 50  0000 C CNN
+F 2 "ATMEGA328P-AU:QFP80P900X900X120-32N" H 3750 3250 50  0001 L BNN
+F 3 "" H 3750 3250 50  0001 L BNN
+F 4 "None" H 3750 3250 50  0001 L BNN "Field4"
+F 5 "Unavailable" H 3750 3250 50  0001 L BNN "Field5"
+F 6 "Microcontroller Mcu, 8 Bit, Atmega, 20mhz, Tqfp-32" H 3750 3250 50  0001 L BNN "Field6"
+F 7 "ATMEGA328P-AU" H 3750 3250 50  0001 L BNN "Field7"
+F 8 "TQFP-32 Microchip" H 3750 3250 50  0001 L BNN "Field8"
+	1    3750 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x08_Female J3
+U 1 1 5CE50E65
+P 5500 2500
+F 0 "J3" H 5528 2476 50  0000 L CNN
+F 1 "Conn_01x08_Female" H 5528 2385 50  0000 L CNN
+F 2 "millk:conn8" H 5500 2500 50  0001 C CNN
+F 3 "~" H 5500 2500 50  0001 C CNN
+	1    5500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2850 4850 2850
+Wire Wire Line
+	4850 2850 4850 2200
+Wire Wire Line
+	4850 2200 5300 2200
+Wire Wire Line
+	4350 2950 4900 2950
+Wire Wire Line
+	4900 2950 4900 2300
+Wire Wire Line
+	4900 2300 5300 2300
+Wire Wire Line
+	5000 2400 5300 2400
+Wire Wire Line
+	4350 2350 4750 2350
+Wire Wire Line
+	4750 2350 4750 2500
+Wire Wire Line
+	4750 2500 5150 2500
+Wire Wire Line
+	5300 2700 5150 2700
+Wire Wire Line
+	5150 2700 5150 2500
+Connection ~ 5150 2500
+Wire Wire Line
+	5150 2500 5300 2500
+Wire Wire Line
+	5300 2600 5000 2600
+Connection ~ 5000 2600
+Wire Wire Line
+	5000 2600 5000 2400
+Wire Wire Line
+	3150 3150 2750 3150
+Wire Wire Line
+	2750 3150 2750 2000
+Wire Wire Line
+	2750 2000 4650 2000
+Wire Wire Line
+	4650 2000 4650 2800
+Wire Wire Line
+	4650 2800 5300 2800
+Wire Wire Line
+	5000 4250 5000 2600
+Wire Wire Line
+	5300 2900 5200 2900
+Wire Wire Line
+	5200 2900 5200 3050
+Wire Wire Line
+	5200 3050 4700 3050
+Wire Wire Line
+	4700 3050 4700 1900
+Wire Wire Line
+	4700 1900 2650 1900
+Wire Wire Line
+	2650 1900 2650 3250
+Wire Wire Line
+	2650 3250 3150 3250
+$Comp
+L Connector:Conn_01x08_Female J4
+U 1 1 5CE55224
+P 5500 3450
+F 0 "J4" H 5392 2825 50  0000 C CNN
+F 1 "Conn_01x08_Female" H 5392 2916 50  0000 C CNN
+F 2 "millk:conn8" H 5500 3450 50  0001 C CNN
+F 3 "~" H 5500 3450 50  0001 C CNN
+	1    5500 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3150 4650 3150
+Wire Wire Line
+	4650 3150 4650 3050
+Wire Wire Line
+	4650 3050 4350 3050
+Wire Wire Line
+	5300 3250 4600 3250
+Wire Wire Line
+	4600 3250 4600 3150
+Wire Wire Line
+	4600 3150 4350 3150
+Wire Wire Line
+	5300 3350 4550 3350
+Wire Wire Line
+	4550 3250 4350 3250
+Wire Wire Line
+	5300 3450 4500 3450
+Wire Wire Line
+	4500 3450 4500 1800
+Wire Wire Line
+	4500 1800 3050 1800
+Wire Wire Line
+	3050 1800 3050 2550
+Wire Wire Line
+	3050 2550 3150 2550
+Wire Wire Line
+	5300 3550 4450 3550
+Wire Wire Line
+	4450 3550 4450 1750
+Wire Wire Line
+	4450 1750 3000 1750
+Wire Wire Line
+	3000 1750 3000 2650
+Wire Wire Line
+	3000 2650 3150 2650
+Wire Wire Line
+	5300 3650 4400 3650
+Wire Wire Line
+	4400 3650 4400 1700
+Wire Wire Line
+	4400 1700 2950 1700
+Wire Wire Line
+	2950 1700 2950 2750
+Wire Wire Line
+	2950 2750 3150 2750
+Wire Wire Line
+	5300 3750 4800 3750
+Wire Wire Line
+	4800 3750 4800 1650
+Wire Wire Line
+	4800 1650 2900 1650
+Wire Wire Line
+	2900 1650 2900 2850
+Wire Wire Line
+	2900 2850 3150 2850
+Wire Wire Line
+	5300 3900 5300 3850
+Wire Wire Line
+	5300 3850 5100 3850
+Wire Wire Line
+	5100 3850 5100 1600
+Wire Wire Line
+	5100 1600 2850 1600
+Wire Wire Line
+	2850 1600 2850 2950
+Wire Wire Line
+	2850 2950 3150 2950
+Connection ~ 5300 3850
+$Comp
+L Connector:Conn_01x08_Female J2
+U 1 1 5CE646EC
+P 1850 2700
+F 0 "J2" H 1878 2676 50  0000 L CNN
+F 1 "Conn_01x08_Female" H 1878 2585 50  0000 L CNN
+F 2 "millk:conn8" H 1850 2700 50  0001 C CNN
+F 3 "~" H 1850 2700 50  0001 C CNN
+	1    1850 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3150 3050 2050 3050
+Wire Wire Line
+	2050 3050 2050 3000
+Wire Wire Line
+	4350 2250 4350 1500
+Wire Wire Line
+	4350 1500 2200 1500
+Wire Wire Line
+	2200 1500 2200 2900
+Wire Wire Line
+	2200 2900 2050 2900
+Wire Wire Line
+	4350 3450 4350 3350
+Wire Wire Line
+	4350 3350 2600 3350
+Wire Wire Line
+	2600 3350 2600 2800
+Wire Wire Line
+	2600 2800 2050 2800
+Wire Wire Line
+	3150 2350 2600 2350
+Wire Wire Line
+	2600 2350 2600 2700
+Wire Wire Line
+	2600 2700 2050 2700
+Wire Wire Line
+	4400 4250 4400 4600
+Wire Wire Line
+	4400 4600 2550 4600
+Wire Wire Line
+	2550 4600 2550 2600
+Wire Wire Line
+	2550 2600 2050 2600
+Wire Wire Line
+	4350 4250 4400 4250
+Connection ~ 4400 4250
+Wire Wire Line
+	4400 4250 5000 4250
+Wire Wire Line
+	4350 3550 4350 3800
+Wire Wire Line
+	4350 3800 3850 3800
+Wire Wire Line
+	3850 3800 3850 4750
+Wire Wire Line
+	3850 4750 2500 4750
+Wire Wire Line
+	2500 4750 2500 2500
+Wire Wire Line
+	2500 2500 2050 2500
+Wire Wire Line
+	3150 3450 2400 3450
+Wire Wire Line
+	2400 3450 2400 2400
+Wire Wire Line
+	2400 2400 2050 2400
+Wire Wire Line
+	2350 3550 2350 2300
+Wire Wire Line
+	2350 2300 2050 2300
+$Comp
+L Connector:Conn_01x08_Female J1
+U 1 1 5CE7C25F
+P 1450 4200
+F 0 "J1" H 1342 3575 50  0000 C CNN
+F 1 "Conn_01x08_Female" H 1342 3666 50  0000 C CNN
+F 2 "millk:conn8" H 1450 4200 50  0001 C CNN
+F 3 "~" H 1450 4200 50  0001 C CNN
+	1    1450 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2350 3550 3150 3550
+Wire Wire Line
+	3150 3650 2900 3650
+Wire Wire Line
+	2900 3650 2900 4500
+Wire Wire Line
+	2900 4500 1650 4500
+Wire Wire Line
+	3150 3750 2950 3750
+Wire Wire Line
+	2950 3750 2950 4400
+Wire Wire Line
+	2950 4400 1650 4400
+Wire Wire Line
+	3150 3850 3000 3850
+Wire Wire Line
+	3000 3850 3000 4300
+Wire Wire Line
+	3000 4300 1650 4300
+Wire Wire Line
+	3150 3950 3050 3950
+Wire Wire Line
+	3050 3950 3050 4200
+Wire Wire Line
+	3050 4200 1650 4200
+Wire Wire Line
+	3150 4050 3100 4050
+Wire Wire Line
+	3100 4050 3100 4150
+Wire Wire Line
+	3100 4150 1650 4150
+Wire Wire Line
+	1650 4150 1650 4100
+Wire Wire Line
+	1750 4000 1650 4000
+Wire Wire Line
+	4550 3250 4550 3350
+Wire Wire Line
+	1650 3900 1900 3900
+Wire Wire Line
+	1900 3900 1900 4950
+Wire Wire Line
+	1900 4950 3750 4950
+Wire Wire Line
+	3750 4950 3750 2650
+Wire Wire Line
+	3750 2650 4350 2650
+Wire Wire Line
+	3650 2550 3650 5000
+Wire Wire Line
+	3650 5000 1750 5000
+Wire Wire Line
+	1750 4000 1750 5000
+Wire Wire Line
+	1650 3800 2000 3800
+Wire Wire Line
+	2000 3800 2000 5200
+Wire Wire Line
+	2000 5200 3950 5200
+Wire Wire Line
+	3950 5200 3950 2750
+Wire Wire Line
+	3950 2750 4350 2750
+Wire Wire Line
+	3650 2550 4350 2550
+$EndSCHEMATC

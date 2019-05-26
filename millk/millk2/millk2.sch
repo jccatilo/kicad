@@ -1,0 +1,313 @@
+EESchema Schematic File Version 4
+LIBS:millk2-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R4
+U 1 1 5CBE791B
+P 2650 2150
+F 0 "R4" H 2720 2196 50  0000 L CNN
+F 1 "R" H 2720 2105 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" V 2580 2150 50  0001 C CNN
+F 3 "~" H 2650 2150 50  0001 C CNN
+	1    2650 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5CBEA008
+P 1850 2450
+F 0 "J1" H 1930 2442 50  0000 L CNN
+F 1 "Conn_01x04" H 1930 2351 50  0000 L CNN
+F 2 "millk:Connector4" H 1850 2450 50  0001 C CNN
+F 3 "~" H 1850 2450 50  0001 C CNN
+	1    1850 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5CBEA4C3
+P 1850 2850
+F 0 "J2" V 1722 2930 50  0000 L CNN
+F 1 "Conn_01x02" V 1813 2930 50  0000 L CNN
+F 2 "millk:Conn2" H 1850 2850 50  0001 C CNN
+F 3 "~" H 1850 2850 50  0001 C CNN
+	1    1850 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J3
+U 1 1 5CBEAC58
+P 5250 900
+F 0 "J3" V 5214 512 50  0000 R CNN
+F 1 "Conn_01x06" V 5123 512 50  0000 R CNN
+F 2 "millk:conn6" H 5250 900 50  0001 C CNN
+F 3 "~" H 5250 900 50  0001 C CNN
+	1    5250 900 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3000 2850 2850 2850
+Wire Wire Line
+	2150 2750 3000 2750
+Wire Wire Line
+	3000 2150 2950 2150
+Wire Wire Line
+	5050 1100 4750 1100
+Wire Wire Line
+	2500 2150 2150 2150
+Connection ~ 2150 2150
+Wire Wire Line
+	5150 1100 5150 1200
+Wire Wire Line
+	5150 1200 2850 1200
+Wire Wire Line
+	2850 1200 2850 2850
+Connection ~ 2850 2850
+Wire Wire Line
+	5250 1100 5250 1300
+Wire Wire Line
+	5250 1300 2950 1300
+Connection ~ 2950 2150
+Wire Wire Line
+	2950 2150 2800 2150
+Wire Wire Line
+	5350 1100 5350 3250
+Wire Wire Line
+	5350 3250 7800 3250
+Wire Wire Line
+	5450 1100 5450 3150
+Wire Wire Line
+	5450 3150 7800 3150
+Wire Wire Line
+	5550 1100 5550 3050
+Wire Wire Line
+	5550 3050 7800 3050
+Wire Wire Line
+	7800 2950 4750 2950
+Wire Wire Line
+	4750 2950 4750 1100
+Connection ~ 4750 1100
+Wire Wire Line
+	4750 1100 2150 1100
+$Comp
+L Device:R R2
+U 1 1 5CC178B3
+P 2350 3900
+F 0 "R2" H 2420 3946 50  0000 L CNN
+F 1 "R" H 2420 3855 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" V 2280 3900 50  0001 C CNN
+F 3 "~" H 2350 3900 50  0001 C CNN
+	1    2350 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5CC178BF
+P 2350 4350
+F 0 "D1" V 2389 4233 50  0000 R CNN
+F 1 "LED" V 2298 4233 50  0000 R CNN
+F 2 "LEDs:LED_D5.0mm" H 2350 4350 50  0001 C CNN
+F 3 "~" H 2350 4350 50  0001 C CNN
+	1    2350 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L laminator_lib:Switch_SW_Push SW1
+U 1 1 5CC1DD2D
+P 1650 3800
+F 0 "SW1" H 1650 4085 50  0000 C CNN
+F 1 "Switch_SW_Push" H 1650 3994 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 1650 4000 50  0001 C CNN
+F 3 "" H 1650 4000 50  0001 C CNN
+	1    1650 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3150 2350 3150
+Wire Wire Line
+	2350 3150 2350 3750
+Wire Wire Line
+	3000 3250 2850 3250
+Wire Wire Line
+	2350 4600 2350 4500
+Wire Wire Line
+	2600 4600 2350 4600
+Wire Wire Line
+	2600 4500 2600 4600
+Wire Wire Line
+	2350 4050 2350 4200
+Wire Wire Line
+	2350 4600 2150 4600
+Wire Wire Line
+	2150 4600 2150 2900
+Connection ~ 2350 4600
+Wire Wire Line
+	7800 2750 5150 2750
+Wire Wire Line
+	5150 2750 5150 1200
+Connection ~ 5150 1200
+$Comp
+L 2019-04-13_10-23-09:ATMEGA328P-PU U1
+U 1 1 5CBE697D
+P 3000 2150
+F 0 "U1" H 5400 2637 60  0000 C CNN
+F 1 "ATMEGA328P-PU" H 5400 2531 60  0000 C CNN
+F 2 "footprints:ATMEGA328P-PU" H 5400 2490 60  0001 C CNN
+F 3 "" H 3000 2150 60  0000 C CNN
+	1    3000 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4050 2600 4200
+$Comp
+L Device:LED D2
+U 1 1 5CBE7FCD
+P 2600 4350
+F 0 "D2" V 2639 4233 50  0000 R CNN
+F 1 "LED" V 2548 4233 50  0000 R CNN
+F 2 "LEDs:LED_D5.0mm" H 2600 4350 50  0001 C CNN
+F 3 "~" H 2600 4350 50  0001 C CNN
+	1    2600 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5CBE70C3
+P 2600 3900
+F 0 "R3" H 2670 3946 50  0000 L CNN
+F 1 "R" H 2670 3855 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" V 2530 3900 50  0001 C CNN
+F 3 "~" H 2600 3900 50  0001 C CNN
+	1    2600 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 1300 2950 2150
+Wire Wire Line
+	2150 1100 2150 2150
+Wire Wire Line
+	1150 3800 1150 1100
+Wire Wire Line
+	1150 1100 2150 1100
+Connection ~ 2150 1100
+Wire Wire Line
+	1150 3800 1450 3800
+Wire Wire Line
+	2600 3750 2600 2650
+Wire Wire Line
+	2600 2650 3000 2650
+$Comp
+L Device:R R1
+U 1 1 5CC84511
+P 1850 4150
+F 0 "R1" H 1780 4104 50  0000 R CNN
+F 1 "R" H 1780 4195 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0805" V 1780 4150 50  0001 C CNN
+F 3 "~" H 1850 4150 50  0001 C CNN
+	1    1850 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1850 4300 1850 4600
+Wire Wire Line
+	1850 4600 2150 4600
+Connection ~ 2150 4600
+Wire Wire Line
+	1850 4000 1850 3900
+Wire Wire Line
+	2000 3900 1850 3900
+Connection ~ 1850 3900
+Wire Wire Line
+	1850 3900 1850 3800
+Wire Wire Line
+	3000 3350 2000 3350
+Wire Wire Line
+	2000 3350 2000 3900
+$Comp
+L Device:Buzzer BZ1
+U 1 1 5CC1B37E
+P 2950 4350
+F 0 "BZ1" H 3102 4379 50  0000 L CNN
+F 1 "Buzzer" H 3102 4288 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 2925 4450 50  0001 C CNN
+F 3 "~" V 2925 4450 50  0001 C CNN
+	1    2950 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4250 2700 4250
+Wire Wire Line
+	2700 4250 2700 4600
+Wire Wire Line
+	2700 4600 2600 4600
+Connection ~ 2600 4600
+Wire Wire Line
+	2850 4450 2750 4450
+Wire Wire Line
+	2750 4450 2750 4050
+Wire Wire Line
+	2750 4050 2850 4050
+Wire Wire Line
+	2150 2150 2150 2250
+Wire Wire Line
+	2150 2850 2250 2850
+Wire Wire Line
+	2050 2250 2150 2250
+Connection ~ 2150 2250
+Wire Wire Line
+	2150 2250 2150 2650
+Connection ~ 2250 2850
+Wire Wire Line
+	2250 2850 2850 2850
+Wire Wire Line
+	2050 2750 2100 2750
+Wire Wire Line
+	2100 2750 2100 2900
+Wire Wire Line
+	2100 2900 2150 2900
+Connection ~ 2150 2900
+Wire Wire Line
+	2150 2900 2150 2850
+Wire Wire Line
+	2050 2850 2050 3000
+Wire Wire Line
+	2050 3000 1700 3000
+Wire Wire Line
+	1700 3000 1700 2650
+Wire Wire Line
+	1700 2650 2150 2650
+Connection ~ 2150 2650
+Wire Wire Line
+	2150 2650 2150 2750
+Wire Wire Line
+	2050 2550 2250 2550
+Wire Wire Line
+	2250 2550 2250 2850
+Wire Wire Line
+	2500 2350 2500 2450
+Wire Wire Line
+	2050 2350 2500 2350
+Wire Wire Line
+	3000 2450 2500 2450
+Wire Wire Line
+	3000 2550 2350 2550
+Wire Wire Line
+	2350 2550 2350 2450
+Wire Wire Line
+	2050 2450 2350 2450
+Wire Wire Line
+	2850 3250 2850 4050
+$EndSCHEMATC
