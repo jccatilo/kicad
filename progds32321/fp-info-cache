@@ -1,4 +1,4 @@
-249013611718047
+253908464706047
 ATMEGA328P-AU
 QFP80P900X900X120-32N
 
@@ -21594,6 +21594,13 @@ ATMEGA328P-PU
 0
 28
 28
+footprints
+pushbutton
+
+
+0
+2
+2
 Fuse_Holders_and_Fuses
 BladeFuse-CarType
 
@@ -31724,6 +31731,13 @@ Cell Battery SMD
 2
 2
 otp
+conn_24
+
+
+0
+24
+24
+otp
 CR2032_holder_20mm
 
 
@@ -31737,6 +31751,13 @@ FPC24
 0
 24
 24
+otp
+inductorsmd
+
+
+0
+2
+2
 otp
 programmer06
 

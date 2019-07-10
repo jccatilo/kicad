@@ -15,17 +15,6 @@ Comment3 "Research and Development"
 Comment4 "Author: Abdullah Alasheed"
 $EndDescr
 $Comp
-L OTP-v02-rescue:FPC24-otp J1
-U 1 1 5C7151EB
-P 9700 3350
-F 0 "J1" H 10077 3301 50  0000 L CNN
-F 1 "FPC24" H 10077 3210 50  0000 L CNN
-F 2 "otp:FPC24" H 9700 2500 50  0001 C CNN
-F 3 "" H 9700 2500 50  0001 C CNN
-	1    9700 3350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C7
 U 1 1 5C72227F
 P 8750 2600
@@ -160,17 +149,10 @@ Wire Wire Line
 	8650 4000 8300 4000
 Connection ~ 8300 4000
 Wire Wire Line
-	8300 4000 8300 3900
-Wire Wire Line
 	8950 4100 8300 4100
 Connection ~ 8300 4100
 Wire Wire Line
 	8300 4100 8300 4000
-Wire Wire Line
-	9600 3900 8300 3900
-Connection ~ 8300 3900
-Wire Wire Line
-	8300 3900 8300 3800
 Wire Wire Line
 	8650 4400 8300 4400
 Wire Wire Line
@@ -534,66 +516,66 @@ Wire Wire Line
 $Comp
 L Device:Battery_Cell BT2
 U 1 1 5C7C1C30
-P 4700 1350
-F 0 "BT2" H 4818 1446 50  0000 L CNN
-F 1 "Cell Battery 3V" H 4818 1355 50  0000 L CNN
-F 2 "otp:Cell Battery SMD" V 4700 1410 50  0001 C CNN
-F 3 "~" V 4700 1410 50  0001 C CNN
-	1    4700 1350
+P 3700 6250
+F 0 "BT2" H 3818 6346 50  0000 L CNN
+F 1 "Cell Battery 3V" H 3818 6255 50  0000 L CNN
+F 2 "otp:Cell Battery SMD" V 3700 6310 50  0001 C CNN
+F 3 "~" V 3700 6310 50  0001 C CNN
+	1    3700 6250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4700 800  4700 1150
+	3700 5700 3700 6050
 $Comp
 L power:GND #PWR011
 U 1 1 5C7C6F65
-P 4700 1550
-F 0 "#PWR011" H 4700 1300 50  0001 C CNN
-F 1 "GND" H 4705 1377 50  0000 C CNN
-F 2 "" H 4700 1550 50  0001 C CNN
-F 3 "" H 4700 1550 50  0001 C CNN
-	1    4700 1550
+P 3700 6450
+F 0 "#PWR011" H 3700 6200 50  0001 C CNN
+F 1 "GND" H 3705 6277 50  0000 C CNN
+F 2 "" H 3700 6450 50  0001 C CNN
+F 3 "" H 3700 6450 50  0001 C CNN
+	1    3700 6450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4700 1550 4700 1450
+	3700 6450 3700 6350
 $Comp
 L Device:Battery BT1
 U 1 1 5C7CB3D8
-P 3950 1250
-F 0 "BT1" H 4058 1296 50  0000 L CNN
-F 1 "Battery 3V" H 4058 1205 50  0000 L CNN
-F 2 "otp:Battery_pack_connector" V 3950 1310 50  0001 C CNN
-F 3 "~" V 3950 1310 50  0001 C CNN
-	1    3950 1250
+P 2950 6150
+F 0 "BT1" H 3058 6196 50  0000 L CNN
+F 1 "Battery 3V" H 3058 6105 50  0000 L CNN
+F 2 "otp:Battery_pack_connector" V 2950 6210 50  0001 C CNN
+F 3 "~" V 2950 6210 50  0001 C CNN
+	1    2950 6150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VDC #PWR08
 U 1 1 5C7CB490
-P 3950 900
-F 0 "#PWR08" H 3950 800 50  0001 C CNN
-F 1 "VDC" H 3950 1175 50  0000 C CNN
-F 2 "" H 3950 900 50  0001 C CNN
-F 3 "" H 3950 900 50  0001 C CNN
-	1    3950 900 
+P 2950 5800
+F 0 "#PWR08" H 2950 5700 50  0001 C CNN
+F 1 "VDC" H 2950 6075 50  0000 C CNN
+F 2 "" H 2950 5800 50  0001 C CNN
+F 3 "" H 2950 5800 50  0001 C CNN
+	1    2950 5800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 900  3950 1050
+	2950 5800 2950 5950
 $Comp
 L power:GND #PWR09
 U 1 1 5C7D3CE3
-P 3950 1550
-F 0 "#PWR09" H 3950 1300 50  0001 C CNN
-F 1 "GND" H 3955 1377 50  0000 C CNN
-F 2 "" H 3950 1550 50  0001 C CNN
-F 3 "" H 3950 1550 50  0001 C CNN
-	1    3950 1550
+P 2950 6450
+F 0 "#PWR09" H 2950 6200 50  0001 C CNN
+F 1 "GND" H 2955 6277 50  0000 C CNN
+F 2 "" H 2950 6450 50  0001 C CNN
+F 3 "" H 2950 6450 50  0001 C CNN
+	1    2950 6450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 1550 3950 1450
+	2950 6450 2950 6350
 NoConn ~ 2700 2200
 NoConn ~ 2700 2400
 NoConn ~ 2700 2500
@@ -676,7 +658,7 @@ Wire Wire Line
 	5450 3900 5450 4150
 Wire Wire Line
 	9450 3400 9600 3400
-Text GLabel 4700 800  1    50   Input ~ 0
+Text GLabel 3700 5700 1    50   Input ~ 0
 Batt
 Text GLabel 2150 5600 1    50   Input ~ 0
 Batt
@@ -891,25 +873,25 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x06_Female J2
 U 1 1 5CDD3003
-P 5100 2700
-F 0 "J2" H 5128 2676 50  0000 L CNN
-F 1 "Conn_01x06_Female" H 5128 2585 50  0000 L CNN
-F 2 "otp:programmer06" H 5100 2700 50  0001 C CNN
-F 3 "~" H 5100 2700 50  0001 C CNN
-	1    5100 2700
+P 1500 2800
+F 0 "J2" H 1528 2776 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 1528 2685 50  0000 L CNN
+F 2 "otp:programmer06" H 1500 2800 50  0001 C CNN
+F 3 "~" H 1500 2800 50  0001 C CNN
+	1    1500 2800
 	1    0    0    -1  
 $EndComp
-Text GLabel 4900 2500 0    50   Input ~ 0
+Text GLabel 1300 2600 0    50   Input ~ 0
 prVcc
-Text GLabel 4900 2600 0    50   Input ~ 0
+Text GLabel 1300 2700 0    50   Input ~ 0
 GND
-Text GLabel 4900 2700 0    50   Input ~ 0
+Text GLabel 1300 2800 0    50   Input ~ 0
 prD10
-Text GLabel 4900 3000 0    50   Input ~ 0
+Text GLabel 1300 3100 0    50   Input ~ 0
 prD11
-Text GLabel 4900 2900 0    50   Input ~ 0
+Text GLabel 1300 3000 0    50   Input ~ 0
 prD12
-Text GLabel 4900 2800 0    50   Input ~ 0
+Text GLabel 1300 2900 0    50   Input ~ 0
 prD13
 Wire Wire Line
 	2700 1800 2900 1800
@@ -961,4 +943,22 @@ Wire Wire Line
 	2850 3300 2700 3300
 Text GLabel 2850 3400 3    50   Input ~ 0
 prD10
+$Comp
+L OTP-v02-rescue:FPC24-otp J1
+U 1 1 5C7151EB
+P 9700 3350
+F 0 "J1" H 10077 3301 50  0000 L CNN
+F 1 "FPC24" H 10077 3210 50  0000 L CNN
+F 2 "otp:FPC24" H 9700 2500 50  0001 C CNN
+F 3 "" H 9700 2500 50  0001 C CNN
+	1    9700 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4000 8300 3900
+Wire Wire Line
+	8300 3900 8300 3800
+Connection ~ 8300 3900
+Wire Wire Line
+	9600 3900 8300 3900
 $EndSCHEMATC
